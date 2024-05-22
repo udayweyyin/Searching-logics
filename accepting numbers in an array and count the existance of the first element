@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+int x[10],y,lookfor,count;
+y=0;
+while(y<=9)
+{
+printf("Enter a numeber : ");
+scanf("%d",&x[y]);
+y++;
+}
+lookfor=x[0];
+y=0;
+count=0;
+while(y<=9)
+{
+if(x[y]==lookfor)
+{
+count++;
+}
+y++;
+}
+printf("Count of %d is %d",lookfor,count);
+return 0;
+}
